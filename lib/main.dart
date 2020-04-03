@@ -57,7 +57,7 @@ class _TabViewState extends State<TabView> {
                 Expanded(
                     child: TabBarView(children: [
                   Container(
-                   // color: Colors.orange,
+                    color: Colors.black12,
                     child: FutureBuilder<List<MenuItem>>(
                       future: futureMenuItem,
                       builder: (context,snapshot){
@@ -68,6 +68,7 @@ class _TabViewState extends State<TabView> {
                             for (var menuItem in snapshot.data) 
                             
                             Container(
+                             // color: Colors.white,
                               constraints: BoxConstraints(
                              //   minHeight: 150
                               ),
@@ -75,12 +76,12 @@ class _TabViewState extends State<TabView> {
                               
                               margin: EdgeInsets.all(5.0),
                               decoration: BoxDecoration(
-                                //color: Colors.grey,
+                                color: Colors.white,
                                 borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                                border: Border.all(
-                                  color:Colors.black12,
-                                  width: 2.0
-                                )
+                              //  border: Border.all(
+                                //  color:Colors.black12,
+                                //  width: 2.0
+                              //  )
                               ),
                           //    width: 80,
                               child: Column(
